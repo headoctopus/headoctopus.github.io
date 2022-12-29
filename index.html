@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>Подождите...</title>
@@ -11,43 +11,23 @@
     <div class="content_area">
       <div class="content_center">
         <p class="text_area_1">Добро пожаловать!</p>
-        <p class="text_area_3">AR-store concept</p>
+        <p class="text_area_3">AR-ГЕОМЕТРИЯ</p>
         <div class="loader"></div>
-        <p id="marker">3</p>
+        <p id="marker">5</p>
         <p class="text_area_2">Загрузка...</p>
       </div>
     </div>
 
     <script>
-      num = 3;
+      num = 5;
       setTimeout(numerator, 1000)
 
-      setTimeout(go_about, 3000)
+      setTimeout(go_about, 5000)
 
       function go_about()
       {
-        window.location.href = 'webpages/about.html';
+        window.location.href = 'webpages/mainpage.html';
       }
-
-
-
-      /* думала, что нужны будут разные страницы, но вроде освоила flex
-      setTimeout(checker_gadget, 3000)
-      function checker_gadget() //функция проверки устройства и редиректа
-      {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i //чек устройства
-          .test(navigator.userAgent))  //из юзер агента смотрим через что пользователь сидит
-          {
-            //используется мобильное устройство, редирект в мобильные страницы
-            window.location.href = 'webpages/about-m.html';
-          } 
-          else 
-          {
-            //используется пк, редирект в пк-страницы
-            window.location.href = 'webpages/about.html';
-          }
-      }
-      */
 
       function numerator() //функция проверки устройства и редиректа
       {
