@@ -49,11 +49,39 @@ html
 {
     background-color: var(--contrast-color);
     border-radius: 40px;
-    height: 700px;
-    width: 700px;
+    width: 80%;
     box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
+.content_button_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.menublock{
+    border: 10px solid var(--main-color);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.textbut
+{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: Comfortaa, sans-serif;
+  font-size: 40px;
+  color: var(--main-color);
+  margin: 20px;
+}
+
+.textbut-a{
+    text-decoration: none!important;
+    color: var(--main-color);
+}
 
 .text_area_1
 {
@@ -234,4 +262,10 @@ html
     color: var(--main-color);
     text-align: left;
     margin: 0px;
+}
+
+
+.menublock{
+    border: 10px solid var(--main-color);
+    border-radius: 30px;
 }

@@ -1,0 +1,80 @@
+<!doctype HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>ЗАДАЧА 2</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="../js/aframe.min.js"></script>
+    <script src="../js/aframe-ar.js"></script>
+    <link rel="stylesheet" href="../css/problems.css">
+    <body style='margin : 0px; overflow: hidden;'>
+
+
+        <a-scene embedded vr-mode-ui="enabled: false;" vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" >
+
+
+            <a-assets>
+                <a-asset-item id="2_1" src="../models/2_1.gltf"></a-asset-item>
+                <a-asset-item id="2_2" src="../models/2_2.gltf"></a-asset-item>
+                <a-asset-item id="2_3" src="../models/2_3.gltf"></a-asset-item>
+                <a-asset-item id="2_4" src="../models/2_4.gltf"></a-asset-item>
+                <a-asset-item id="2_5" src="../models/2_5.gltf"></a-asset-item>
+            </a-assets>
+            
+            <a-marker type="barcode" value="2" id="m2" registerevents>
+                <a-entity   
+                            id="entity_now"
+                            position="0 0 0" 
+                            rotation="0 0 0"
+                            scale="0.1 0.1 0.1"
+                            gftl-model="#2_1">
+                </a-entity>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+        
+        </a-scene>
+
+        <script>
+            function myFunction1() 
+            {
+                var lantern = document.getElementById('entity_now');
+                lantern.setAttribute('gltf-model', '../models/2_1.gltf');
+            }
+            function myFunction2() 
+            {
+                var lantern = document.getElementById('entity_now');
+                lantern.setAttribute('gltf-model', '../models/2_2.gltf');
+            }
+            function myFunction3() 
+            {
+                var lantern = document.getElementById('entity_now');
+                lantern.setAttribute('gltf-model', '../models/2_3.gltf');
+            }
+            function myFunction4() 
+            {
+                var lantern = document.getElementById('entity_now');
+                lantern.setAttribute('gltf-model', '../models/2_4.gltf');
+            }
+            function myFunction5() 
+            {
+                var lantern = document.getElementById('entity_now');
+                lantern.setAttribute('gltf-model', '../models/2_5.gltf');
+            }
+        </script>
+
+    <div class="debug_header">
+        <a>ЗАДАЧА 1</a>
+    </div>
+    <div id="arjsDebugUIContainer">
+        <div class="debug_buttons">
+            <button class="down_buttons" type="button" id="myBtn" onclick="myFunction1()">Шаг 1</button>
+            <button class="down_buttons" type="button" id="myBtn" onclick="myFunction2()">Шаг 2</button>
+            <button class="down_buttons" type="button" id="myBtn" onclick="myFunction3()">Шаг 3</button>
+            <button class="down_buttons" type="button" id="myBtn" onclick="myFunction4()">Шаг 4</button>
+            <button class="down_buttons" type="button" id="myBtn" onclick="myFunction5()">Шаг 5</button>
+        </div>
+    </div>
+    </body>
+</html>
